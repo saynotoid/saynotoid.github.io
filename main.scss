@@ -4,14 +4,30 @@
     list-style: none;
 }
 
-$color: red;
+$faceColor: red;
+$faceHoverColor: blue;
+$bgColor: green;
 
-@mixin hoverYo {
+@mixin hoverCoolYo {
+    cursor: default;
+    color: $faceColor; 
+    background-color: none;
+    border: solid 3px gray;
     transition: ease-in-out 1s;
     &:hover {
-        color: blue;
+        color: $faceHoverColor;
+        background-color: $bgColor;
         transition: ease-in-out 0.5s;
     }
+}
+
+body {
+    display: grid;
+    grid-template: repeat(4, 1fr) 
+    background-image: url(title.ico);
+    background-position: right;
+    //background-size: cover;
+    background-repeat: no-repeat;
 }
 
 ul {
@@ -19,14 +35,10 @@ ul {
 }
 
 li {
-    color: $color;
-    border: 2px solid gray;
-    width: 12rem;
-    padding: .5rem 1rem;
-    cursor: wait;
+    @include hoverCoolYo();
     & + li{
         border-top: none;
     }
-    @include hoverYo();  
+    
 }
     

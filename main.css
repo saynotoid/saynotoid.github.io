@@ -4,25 +4,32 @@
   list-style: none;
 }
 
+body {
+  display: grid;
+  background-image: url(title.ico);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 ul {
   display: inline-block;
 }
 
 li {
+  cursor: default;
   color: red;
-  border: 2px solid gray;
-  width: 12rem;
-  padding: .5rem 1rem;
-  cursor: wait;
+  background-color: none;
+  border: solid 3px gray;
   transition: ease-in-out 1s;
-}
-
-li + li {
-  border-top: none;
 }
 
 li:hover {
   color: blue;
+  background-color: green;
   transition: ease-in-out 0.5s;
+}
+
+li + li {
+  border-top: none;
 }
 /*# sourceMappingURL=main.css.map */
