@@ -4,11 +4,8 @@
   list-style: none;
 }
 
-body {
-  display: grid;
-  background-image: url(title.ico);
-  background-position: right;
-  background-repeat: no-repeat;
+h1, h2, h3 {
+  color: white;
 }
 
 ul {
@@ -31,5 +28,34 @@ li:hover {
 
 li + li {
   border-top: none;
+}
+
+.grid {
+  display: grid;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  grid-template: 20% 70% 10%/repeat(12, 1fr);
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+
+/*.myvideo{
+    position: relative;
+    padding-bottom: 56.25%;
+	padding-top: 0px;//30px;
+	height: 0;
+	overflow: hidden;
+}*/
+@media (max-width: 767px) {
+  h1, h2, h3 {
+    color: black;
+  }
 }
 /*# sourceMappingURL=main.css.map */
