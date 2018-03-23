@@ -1,3 +1,3 @@
-# ♥ [_https://saynotoid.github.io/_](https://saynotoid.github.io/) ♥
+# ♥ [_//saynotoid.github.io/_](https://saynotoid.github.io/) ♥
 
 ## feel free to check it out :)
