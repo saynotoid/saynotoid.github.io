@@ -4,13 +4,24 @@
   list-style: none;
 }
 
+ul {
+  display: inline-block;
+}
+
 li {
   color: red;
+  border: 2px solid gray;
+  width: 12rem;
+  padding: .5rem 1rem;
+  cursor: wait;
   transition: ease-in-out 1s;
 }
 
+li + li {
+  border-top: none;
+}
+
 li:hover {
-  font-size: 4rem;
   color: blue;
   transition: ease-in-out 0.5s;
 }

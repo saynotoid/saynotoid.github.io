@@ -9,14 +9,24 @@ $color: red;
 @mixin hoverYo {
     transition: ease-in-out 1s;
     &:hover {
-        font-size: 4rem;
         color: blue;
         transition: ease-in-out 0.5s;
     }
 }
 
+ul {
+    display: inline-block;
+}
+
 li {
     color: $color;
-    @include hoverYo();
+    border: 2px solid gray;
+    width: 12rem;
+    padding: .5rem 1rem;
+    cursor: wait;
+    & + li{
+        border-top: none;
+    }
+    @include hoverYo();  
 }
     
