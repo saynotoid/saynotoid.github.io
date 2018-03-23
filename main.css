@@ -4,11 +4,12 @@
   list-style: none;
 }
 
-h1 {
+li {
   color: red;
+  transition: ease-in-out 1s;
 }
 
-h1:hover {
+li:hover {
   font-size: 4rem;
   color: blue;
   transition: ease-in-out 0.5s;
