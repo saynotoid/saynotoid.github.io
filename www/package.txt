@@ -1,0 +1,2 @@
+parcel build src/index.html --public-url ./
+parcel src/index.html --public-url ./ --no-cache

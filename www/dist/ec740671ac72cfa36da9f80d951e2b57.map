@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAAA,QAAQC,GAAR,CAAY,cAAZ","file":"ec740671ac72cfa36da9f80d951e2b57.map","sourcesContent":["console.log(\"Привет, Мир!\");"]}

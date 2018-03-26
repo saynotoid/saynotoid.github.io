@@ -8,6 +8,9 @@ $faceColor: red;
 $faceHoverColor: blue;
 $bgColor: green;
 
+$total: 37; //Number of .box divs in our html
+$step: 360deg / $total; //Used to compute the hue based on color-wheel
+
 @mixin hoverCoolYo {
     cursor: default;
     color: $faceColor; 
@@ -22,7 +25,7 @@ $bgColor: green;
 }
 
 body {
-    //z-index: 10;
+    z-index: 10;
     //background-image: url(title.ico);
     //background-position: right;
     //background-size: cover;
@@ -42,7 +45,6 @@ li {
     & + li{
         border-top: none;
     }
-    
 }
 
 .grid {
@@ -59,7 +61,13 @@ li {
     color: black;
     border-radius: 5px;
     border: 2px dodgerblue solid;
-  } 
+  }
+
+@for $i from 1 to $total {
+    .box:nth-child(#{$i}) {
+        background: adjust-hue(blue, $i * $step);
+    }
+}
 
 /*.myvideo{
     position: relative;
