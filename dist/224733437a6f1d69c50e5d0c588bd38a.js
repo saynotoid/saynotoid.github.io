@@ -71,9 +71,11 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({10:[function(require,module,exports) {
-console.log("Привет, Мир!");
-},{}],27:[function(require,module,exports) {
+})({9:[function(require,module,exports) {
+"use strict";
+
+console.log("\u041F\u0440\u0438\u0432\u0435\u0442, \u041C\u0438\u0440!");
+},{}],24:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -95,7 +97,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52762' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60550' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -196,5 +198,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[27,10])
+},{}]},{},[24,9])
 //# sourceMappingURL=/dist/224733437a6f1d69c50e5d0c588bd38a.map

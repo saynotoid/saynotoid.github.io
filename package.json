@@ -1,20 +1,25 @@
 {
   "name": "saynotoid.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "all the stuff: sass, babel compiler/transpiler",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/js -d src"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saynotoid/saynotoid.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "saynotoid",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/saynotoid/saynotoid.github.io/issues"
   },
-  "homepage": "https://github.com/saynotoid/saynotoid.github.io#readme"
+  "homepage": "https://github.com/saynotoid/saynotoid.github.io#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }

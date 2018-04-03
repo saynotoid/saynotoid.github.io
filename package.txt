@@ -1,2 +1,5 @@
 parcel build src/index.html --public-url ./
 parcel src/index.html --public-url ./ --no-cache
+
+npm run build //"build": "babel src/js -d src"
+parcel src/index.html ./
